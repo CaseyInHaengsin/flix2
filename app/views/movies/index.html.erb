@@ -1,6 +1,8 @@
 
 <ul>
 <% @movies.each do |movie|  %>
-    <li><%= movie %></li>
+    <li>
+        <span><%= movie.title %> | Rating: <%= movie.rating %></span>  
+    </li>
 <% end %>
 </ul>
